@@ -56,7 +56,7 @@ int main(int argc, char **argv)
     mb.modbus_write_coils(0, 4, write_cols);
 
     // write multiple regs              function 0x10
-    uint16_t write_regs[4] = {123, 123, 123};
+    uint16_t write_regs[4] = {123, 123, 123,123};
     mb.modbus_write_registers(0, 4, write_regs);
 
     // close connection and free the memory
